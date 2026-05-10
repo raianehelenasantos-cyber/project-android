@@ -3,103 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Android</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Miniver&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
-    <style>
-        header{
-            background-color: #1b5e20; /* verde bem escuro */
-            color: white;
-            box-shadow: 2px 1px 10px 1px black;
-            margin-left: 20px;
-            margin-right: 20px;
+   <style>
+    @font-face{
+        font-family: Android;
+        src: url(fontes/idroid.otf) format('opentype');
+    }
+    
+    body{
+        background-color: #BBBF9F;
+    }
+
+    #principal{
+        background-color: beige;
+        /*Adapta o conteudo para no min e max*/
+        min-width:320px;
+        max-width: 800px;
+        padding:10px 20px;
+        margin: auto;
+    }
+
+    header{
+       background-color: #254019;
+       color: white;
+       padding-bottom: 2px;
+    }
+    header > h1 {
+        padding-top: 20px;
+        text-align: center;
+        font-size: 2.5em;
+        font-family: "Bebas Neue", sans-serif;
+        color: #54c486;
+    }
+    header > p {
+        text-align: center;
+        font-size: 1,2em;
+        font-family: "Bebas Neue", sans-serif;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        letter-spacing: -1.5px;
+    }
+    nav{
+        text-align: right;
+        box-shadow: 1px 1px 20px 1px black;
+        padding: 5px;
+    }
+    nav > a {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+        padding: 4px;
+        transition-duration: 1s;
+    }
+
+    a:hover{
+        background-color: #7E8C4A;
+        box-shadow: 10px black;
+    }
+
+
+    img{
+           display: block;
+            margin: auto;
         }
 
-        h2{
-            font-size: 30px;
-            padding-top: 20px;
-            padding-left: 20px;
-        }
-        nav{
-            text-align: right;
-            background-color: #2e7d32; 
-        }
+    iframe {
+        display: block;
+        margin: auto;
+    }
 
-        nav > a{
-            padding-left: 15px;
-            padding-right: 20px;
-            text-decoration: none;
-            font-size: 20px;
-            color: white;
-        }
+    h2 {
+        font-family: Android;
+        font-size: 20px;
+        font-weight: 600;
+        background-image: linear-gradient(to right, #4B592D, #7E8C4A, #dfe5b0);
+        padding-left: 5px;
+    }
+    aside{
+        background-color:#A6BF8E ;  
+        border-radius: 20px;
+        margin-top: 10px;
+        box-shadow: 8px 8px 20px -2px  black;
+    }
 
-        section{
-            background-color: beige;
-            margin: 20px;
-            padding: 20px;
-        }
+    aside > h2{
+    text-align: left;
+       background:#4E7329 ;
+       padding: 5px;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       font-size: 20px;
+       margin-top: -2px;
+       border-radius: 20px 20px 0px  0px;
+       padding-top: 5px;
+       padding-left: 10px;
 
-        #container{
-            display: flex;
-            align-items: flex; /* começa do topo */
-            gap: 20px;
-            text-align: justify;
+    }
 
-        }
-        .texto p{
-            font-family: 'Inter', sans-serif;
-            font-size: 0.7em;
-            margin: 20px;
-            text-align: justify;
-            text-indent: 5px;
-            letter-spacing: 2px;
+    aside > p{
+        padding: 0px 10px 5px 10px;
+    }
 
-            column-count: 2;       /* número de colunas */
-            column-gap: 40px;      /* espaço entre elas */
-            
-        }
+    ul{
+        list-style: none;
+        padding: 5px;
+        margin-left:30px ;
+        columns: 2;
+    }
 
-        .imagem img{
-            width: 500px;
-            height: 400px;
-            border-radius: 20px;
-        }
+    ul > li::before {
+        content: "✔  ";
+        color: green;
+        font-weight: bold;
 
+    }
 
-    </style>
+   footer > p {
+        text-align: center;
+        padding: 10px;
+        color: white;
+        background-color: #254019;
+   }
+
+    article > p {
+        margin: 15px 0px ;
+        text-align: justify;
+        text-indent: 30px;
+        font-size: 1em;
+        line-height: 1.9em;
+    }
+
+    p > a{
+        color:white;
+        font-weight: 600;
+        background-color: #4B592D;
+        padding: 2px 6px;
+        text-decoration: none;
+    }
+
+    p > a:hover{
+        color: black;
+    }
+   </style>
 </head>
 <body>
+    
+
     <header>
-
-        <h2>Sistema de Adubação 🌿</h2>
-
+        <h1>Curiosidades de Tecnologia</h1>
+        <p>
+            Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar
+        </p>
         <nav>
-            <a href="pages/01.html"> Inicio</a>
-            <a href="pages/02.html"> Sobre </a>
-        </nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Fale Conosco</a>
 
+        </nav>
     </header>
 
+    <div id="principal">
     <main>
         <section>
-            <article >
-                <div id="container">
-                    <h3> Historia do Eucalipto </h3>
-                    <div class="texto">
-                        <p>O eucalipto é uma árvore originária da Austrália, onde existem mais de 700 espécies diferentes. Pertencente ao gênero Eucalyptus, sempre teve grande importância nos ecossistemas locais, servindo de alimento para animais como os coalas e contribuindo para a regeneração natural das florestas.</p>
+           <article>
+                <h2> História do Mascote do Android </h2>
 
-                        <p>A expansão do eucalipto para outros países começou no século XIX, devido ao seu rápido crescimento e à qualidade da madeira. No Brasil, foi introduzido por volta de 1868 e, no início do século XX, teve grande desenvolvimento com os estudos do engenheiro agrônomo Edmundo Navarro de Andrade, que identificou as espécies mais adaptadas ao clima brasileiro para uso principalmente na ferrovia.</p>
+                <p>Provavelmente  você sabe que o sistema operacional <strong>Android</strong>, mantido pelo <strong>Google</strong> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho. </p>
+                
+                <h2> A primeira versão </h2>
 
-                        <p>Com o tempo, o eucalipto se tornou uma das principais culturas florestais do Brasil, sendo utilizado na produção de papel, celulose, energia e construção. Apesar da sua importância econômica, também gera debates ambientais, o que reforça a necessidade de manejo sustentável para equilibrar produtividade e preservação ambiental. 🌿</p>
-                    </div>
-                    <div class="imagem">
-                        <img src="https://images.pexels.com/photos/6113192/pexels-photo-6113192.jpeg?_gl=1*7d7l5k*_ga*MTQzOTYxNjQ4My4xNzc1NzgxMzQ5*_ga_8JE65Q40S6*czE3NzcwNzU2OTUkbzckZzEkdDE3NzcwNzU4NjYkajQkbDAkaDA." alt="Eucalipto" width="400px" height="300px">
-                    </div>
-                </div>
-            </article>
+                <p> A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="https://androidcommunity.com/dan-morrill-shows-us-the-android-mascot-that-almost-was-20130103/">Dan Morrill</a>. Ele conta que abriu o <a href="https://inkscape.org/pt-br/">Inkscape</a> (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote. </p>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="imagens/dan-droids-pq.png">
+                    <img src="imagens/dan-droids.png" alt="">
+                </picture>
+
+                <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os <strong>Dandroids</strong>.
+
+                <h2>Surge um novo mascote</h2>
+
+                <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável. </p>
+
+                <picture>
+                    <source media="(max-width: 800px)" srcset="imagens/irina-blok-pq.jpg">
+                    <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+                </picture>
+
+                <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o <strong>Bugdroid</strong>, o novo mascote do Android.</p>
+
+                <img src="imagens/bugdroid.png" al="">
+
+               <p> A principal inspiração para os traços do novo <strong>Bugdroid </strong>veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do <strong>Google</strong> e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=6ORM8e8oBsVUfEZ7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               
+               <aside>
+                <h2>Quer aprender mais? </h2>
+
+                <p>Outro assunto curioso em relação ao <strong>Android</strong> é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
+
+                <ul>
+                    <li> 1.5 - <abbr title="Bolo de Copo">Cupcake</abbr></li>
+                    <li> 1.6 - <abbr title="Rosquinha">Donut</abbr></li>
+                    <li> 3.0 - <abbr title="Bomba">Eclair</abbr></li>
+                    <li> 2.2 - <abbr title="Iorgute Congelado">Froyo</abbr></li>
+                    <li> 2.3 - <abbr title="Biscoito de Gengibre">Gingerbread</abbr></li>
+                    <li> 3.0 - <abbr title="Favo de Mel">Honeycomb</abbr></li>
+                    <li> 4.0 - <abbr title="Sanduiche de Sorvete">Ice Cream Sandwich</abbr></li>
+                    <li> 4.1 - <abbr title="Jujuba">Jelly Bean</abbr></li>
+                    <li> 4.4 - <abbr title="Kikat">KitKat</abbr></li>
+                    <li> 5.0 - <abbr title="Pirulito">Lolipop</abbr></li>
+                    <li> 6.0 - <abbr title="Marshmallow">Marshmallow</abbr></li>
+                    <li> 7.0 - <abbr title="Torrine">Nougat</abbr></li>
+                    <li> 8.0 - <abbr title="Oreo">Oreo</abbr></li>
+                    <li> 9.0 - <abbr title="Torta">Pie</abbr></li>
+
+                </ul>
+
+                <p>Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
+
+                <p>Acesse aqui o site <a href="https://www.android.com/intl/en_uk/">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema <strong>Android</strong>.</p>
+                
+            </aside>
+
+            <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>
+
+           </article>
+
         </section>
 
     </main>
+    </div>
+
+
+    <footer>
+        <p>Site criado por Raiane Helena atraves do CursoemVide</p>
+    </footer>
+    
 </body>
 </html>
