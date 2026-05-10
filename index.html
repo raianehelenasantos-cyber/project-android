@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        header{
+            background-color: #1b5e20; /* verde bem escuro */
+            color: white;
+            box-shadow: 2px 1px 10px 1px black;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        h2{
+            font-size: 30px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        nav{
+            text-align: right;
+            background-color: #2e7d32; 
+        }
+
+        nav > a{
+            padding-left: 15px;
+            padding-right: 20px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+
+        section{
+            background-color: beige;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #container{
+            display: flex;
+            align-items: flex; /* começa do topo */
+            gap: 20px;
+            text-align: justify;
+
+        }
+        .texto p{
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7em;
+            margin: 20px;
+            text-align: justify;
+            text-indent: 5px;
+            letter-spacing: 2px;
+
+            column-count: 2;       /* número de colunas */
+            column-gap: 40px;      /* espaço entre elas */
+            
+        }
+
+        .imagem img{
+            width: 500px;
+            height: 400px;
+            border-radius: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <h2>Sistema de Adubação 🌿</h2>
+
+        <nav>
+            <a href="pages/01.html"> Inicio</a>
+            <a href="pages/02.html"> Sobre </a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <article >
+                <div id="container">
+                    <h3> Historia do Eucalipto </h3>
+                    <div class="texto">
+                        <p>O eucalipto é uma árvore originária da Austrália, onde existem mais de 700 espécies diferentes. Pertencente ao gênero Eucalyptus, sempre teve grande importância nos ecossistemas locais, servindo de alimento para animais como os coalas e contribuindo para a regeneração natural das florestas.</p>
+
+                        <p>A expansão do eucalipto para outros países começou no século XIX, devido ao seu rápido crescimento e à qualidade da madeira. No Brasil, foi introduzido por volta de 1868 e, no início do século XX, teve grande desenvolvimento com os estudos do engenheiro agrônomo Edmundo Navarro de Andrade, que identificou as espécies mais adaptadas ao clima brasileiro para uso principalmente na ferrovia.</p>
+
+                        <p>Com o tempo, o eucalipto se tornou uma das principais culturas florestais do Brasil, sendo utilizado na produção de papel, celulose, energia e construção. Apesar da sua importância econômica, também gera debates ambientais, o que reforça a necessidade de manejo sustentável para equilibrar produtividade e preservação ambiental. 🌿</p>
+                    </div>
+                    <div class="imagem">
+                        <img src="https://images.pexels.com/photos/6113192/pexels-photo-6113192.jpeg?_gl=1*7d7l5k*_ga*MTQzOTYxNjQ4My4xNzc1NzgxMzQ5*_ga_8JE65Q40S6*czE3NzcwNzU2OTUkbzckZzEkdDE3NzcwNzU4NjYkajQkbDAkaDA." alt="Eucalipto" width="400px" height="300px">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+</body>
+</html>
